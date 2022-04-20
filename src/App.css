@@ -2,6 +2,9 @@
   text-align: center;
 }
 
+ul.li {
+  pointer-events: all;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
