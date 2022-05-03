@@ -1,14 +1,16 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-import Technologes from './Technologes';
-import Header from './Header';
+import Header from './components/Header';
+import Navbar from './components/Navbar';
+import Profile from './components/Profile';
+
 
 const App = () => {
   return (
     <div>
       <Header />
-      <Technologes />
+      <Navbar />
+      <Profile />
     </div>
   );
 }
