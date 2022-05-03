@@ -15,8 +15,8 @@
   "h h"
   "n c"
   "f f";
-  grid-template-rows: 100px 1fr;
-  grid-template-columns: 2fr 10fr;
+  grid-template-rows: 120px 1fr;
+  grid-template-columns: 3fr 10fr;
 }
 .header {
  grid-area: h;
@@ -29,7 +29,7 @@
  
 .header img {
   display:flex;
-  
+  padding: 15px;
   width: 120px;
 }
 
@@ -52,7 +52,7 @@
   height: 40px;
   padding: 10px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 .footer button {
   width: 100px;
