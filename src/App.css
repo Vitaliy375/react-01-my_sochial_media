@@ -18,45 +18,9 @@
   grid-template-rows: 120px 1fr;
   grid-template-columns: 3fr 10fr;
 }
-.header {
- grid-area: h;
- background-color: forestgreen;
- display: flex;
- justify-content: space-around;
- align-items: center;
- 
- }
- 
-.header img {
-  display:flex;
-  padding: 15px;
-  width: 120px;
-}
 
-.nav {
- grid-area: n;
- background-color: rgb(61, 228, 61);
-}
 
-.content {
- grid-area: c;
- background-color: cornflowerblue;
-}
-.content img {
-  width: 100%;
-}
 
-.footer {
-  grid-area: f;
-  background-color: forestgreen;
-  height: 40px;
-  padding: 10px;
-  display: flex;
-  justify-content: space-evenly;
-}
-.footer button {
-  width: 100px;
-  height: 30px;
-  background-color: aquamarine;
-  color: cornflowerblue;
-}
+
+
+
