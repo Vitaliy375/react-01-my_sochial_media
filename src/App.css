@@ -1,26 +1,20 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 .app-wrapper {
-  font-family: sans-serif;
-  font-size: 40px;
-  width: 100%;
-  min-height: 100vh;
-  display: grid;
-  gap: 10px;
-    
-  grid-template-areas:
-  "h h"
-  "n c"
-  "f f";
-  grid-template-rows: 120px 1fr;
-  grid-template-columns: 3fr 10fr;
+	font-family: sans-serif;
+	font-size: 40px;
+	width: 100%;
+	min-height: 100vh;
+	display: grid;
+	gap: 10px;
+
+	grid-template-areas:
+		'h h'
+		'n c'
+		'f f';
+	grid-template-rows: 120px 1fr;
+	grid-template-columns: 3fr 10fr;
 }
-
-
-
-
-
-

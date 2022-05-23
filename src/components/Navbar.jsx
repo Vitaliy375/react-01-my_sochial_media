@@ -1,22 +1,22 @@
 import React from 'react'
-import './Footer.css'
+import n_b from './Navbar.module.css'
 
 const Navbar = () => {
 	return (
-		<nav className='nav'>
-			<div>
+		<nav className={n_b.nav}>
+			<div className={n_b.item}>
 				<a>Profile</a>
 			</div>
-			<div>
+			<div className={n_b.item}>
 				<a>Masseges</a>
 			</div>
-			<div>
+			<div className={n_b.item}>
 				<a>News</a>
 			</div>
-			<div>
+			<div className={n_b.item}>
 				<a>Music</a>
 			</div>
-			<div>
+			<div className={n_b.item}>
 				<a>Setting</a>
 			</div>
 		</nav>

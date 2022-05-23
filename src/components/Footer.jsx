@@ -1,5 +1,4 @@
 import React from 'react'
-import './Footer.css'
 import c_css from './Footer.module.css'
 
 const Footer = () => {
