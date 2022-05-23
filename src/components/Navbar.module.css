@@ -6,3 +6,6 @@
 .item {
 	color: red;
 }
+.active {
+	color: blue;
+}

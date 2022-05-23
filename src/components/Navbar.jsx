@@ -4,7 +4,7 @@ import n_b from './Navbar.module.css'
 const Navbar = () => {
 	return (
 		<nav className={n_b.nav}>
-			<div className={n_b.item}>
+			<div className={`${n_b.item} ${n_b.active}`}>
 				<a>Profile</a>
 			</div>
 			<div className={n_b.item}>
