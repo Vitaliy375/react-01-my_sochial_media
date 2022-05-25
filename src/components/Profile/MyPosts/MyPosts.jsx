@@ -10,8 +10,8 @@ const MyPosts = props => {
 			<button>Add post</button>
 
 			<div className={mp.posts}></div>
-			<Post massage='Hi, how are you?' likecount='15' dislikecount='2' />
-			<Post massage='It`s my first post' likecount='20' dislikecount='1' />
+			<Post massage='Hi, how are you?' likesCount='15' dislikesCount='2' />
+			<Post massage='It`s my first post' likesCount='20' dislikesCount='1' />
 		</div>
 	)
 }

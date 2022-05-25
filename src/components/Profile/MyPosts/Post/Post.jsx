@@ -7,10 +7,10 @@ const Post = props => {
 			<img src='https://cspromogame.ru//storage/upload_images/avatars/4169.jpg' />
 			{props.massage}
 			<div>
-				<span>like{props.likecount}</span>
+				<span>like:{props.likesCount}</span>
 			</div>
 			<div>
-				<span>dislike{props.dislikecount}</span>
+				<span>dislike:{props.dislikesCount}</span>
 			</div>
 		</div>
 	)
