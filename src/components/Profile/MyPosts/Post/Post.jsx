@@ -1,16 +1,16 @@
 import React from 'react'
 import mp from './Post.module.css'
 
-const Post = () => {
+const Post = props => {
 	return (
 		<div className={mp.item}>
 			<img src='https://cspromogame.ru//storage/upload_images/avatars/4169.jpg' />
-			Post 1
+			{props.massage}
 			<div>
-				<span>like</span>
+				<span>like{props.likecount}</span>
 			</div>
 			<div>
-				<span>dislike</span>
+				<span>dislike{props.dislikecount}</span>
 			</div>
 		</div>
 	)
