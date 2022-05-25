@@ -1,0 +1,15 @@
+.footer {
+	grid-area: f;
+	background-color: rgb(212, 244, 212);
+	height: 80px;
+	padding: 10px;
+	display: flex;
+	justify-content: space-evenly;
+}
+.footer button {
+	width: 100px;
+	height: 30px;
+	background-color: rgb(181, 243, 181);
+	color: rgb(32, 131, 244);
+	border-color: aqua;
+}

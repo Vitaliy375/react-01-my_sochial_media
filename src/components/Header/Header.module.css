@@ -1,0 +1,15 @@
+.header {
+	grid-area: h;
+	background-color: rgb(212, 244, 212);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-right: 70px;
+	color: rgb(38, 153, 248);
+}
+
+.header img {
+	display: flex;
+	padding: 10px;
+	width: 160px;
+}
