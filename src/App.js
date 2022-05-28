@@ -1,16 +1,22 @@
+/* eslint-disable no-undef */
 import React from 'react'
 import './App.css'
 import Footer from './components/Footer/Footer'
 import Header from './components/Header/Header'
 import Navbar from './components/Navbar/Navbar'
 import Profile from './components/Profile/Profile'
+import Dialogs from './components/Dialogs/Dialogs'
 
-const App = () => {
+const App = props => {
 	return (
-		<div className='app-wrapper'>
+		<div className='app_wrapper'>
 			<Header />
 			<Navbar />
-			<Profile />
+			{/* <Profile /> */}
+			<div>
+				<Dialogs />
+			</div>
+
 			<Footer />
 		</div>
 	)
