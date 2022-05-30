@@ -1,9 +1,8 @@
-import React from 'react'
-import css from './Dialogs.module.css'
-// import MyPosts from './MyPosts/MyPosts'
+import React from "react"
+import s from "./Dialogs.module.css"
 
 const Dialogs = props => {
-	return <div className={css.dialogs}>Dialogs</div>
+  return <div className={s.dialogs}>Dialogs</div>
 }
 
 export default Dialogs

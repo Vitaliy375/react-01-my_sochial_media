@@ -1,20 +1,20 @@
 import React from 'react'
-import c_css from './Footer.module.css'
+import s from './Footer.module.css'
 
 const Footer = () => {
-	return (
-		<footer className={c_css.footer}>
-			<button>
-				<a>Menu</a>
-			</button>
-			<button>
-				<a>Handoff</a>
-			</button>
-			<button>
-				<a>No coments</a>
-			</button>
-		</footer>
-	)
+  return (
+    <footer className={s.footer}>
+      <button>
+        <a>Menu</a>
+      </button>
+      <button>
+        <a>Handoff</a>
+      </button>
+      <button>
+        <a>No coments</a>
+      </button>
+    </footer>
+  )
 }
 
 export default Footer

@@ -4,12 +4,13 @@
 	box-sizing: border-box;
 }
 .app_wrapper {
+	background-color: cornflowerblue;
 	font-family: sans-serif;
 	font-size: 40px;
 	width: 100%;
 	min-height: 100vh;
 	display: grid;
-	gap: 10px;
+	gap: 5px;
 
 	grid-template-areas:
 		'h h'
