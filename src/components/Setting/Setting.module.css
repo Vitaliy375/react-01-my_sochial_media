@@ -1,0 +1,7 @@
+.Setting {
+	grid-area: c;
+	height: 100%;
+	background: rgb(33, 87, 225);
+	color: rgb(68, 131, 248);
+	padding: 30px;
+}
