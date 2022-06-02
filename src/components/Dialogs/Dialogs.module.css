@@ -1,7 +1,22 @@
 .dialogs {
-	grid-area: c;
-	height: 100%;
-	background: rgb(252, 252, 186);
-	color: rgb(68, 131, 248);
-	padding: 30px;
+  grid-area: c;
+  height: 100%;
+  background: rgb(252, 252, 186);
+  color: rgb(11, 10, 10);
+  padding: 30px;
+  display: grid;
+  grid-template-columns: 3fr 10fr;
+}
+.DialogsItems {
+  padding: 10px;
+}
+.DialogsItems .active {
+  color: rgb(255, 0, 0);
+}
+.dialog {
+}
+.masseges {
+  padding: 10px;
+}
+.massege {
 }
