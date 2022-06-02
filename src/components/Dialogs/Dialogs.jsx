@@ -1,18 +1,35 @@
 import React from "react"
+import { NavLink } from "react-router-dom"
 import s from "./Dialogs.module.css"
 
 const Dialogs = props => {
   return (
     <div className={s.dialogs}>
       <div className={s.DialogsItems}>
-        <div className={s.dialog + ' ' + s.active}>Саша</div>
-        <div className={s.dialog}>Валя</div>
-        <div className={s.dialog}>Таня</div>
-        <div className={s.dialog}>Коля</div>
-        <div className={s.dialog}>Женя</div>
-        <div className={s.dialog}>Ваня</div>
-        <div className={s.dialog}>Зоя</div>
-        <div className={s.dialog}>Вита</div>
+        <div className={s.dialog + " " + s.active}>
+          <NavLink to="/dialogs/1">Саша</NavLink>
+        </div>
+        <div className={s.dialog}>
+          <NavLink to="/dialogs/2">Валя</NavLink>
+        </div>
+        <div className={s.dialog}>
+          <NavLink to="/dialogs/3">Таня</NavLink>
+        </div>
+        <div className={s.dialog}>
+          <NavLink to="/dialogs/4">Коля</NavLink>
+        </div>
+        <div className={s.dialog}>
+          <NavLink to="/dialogs/5">Женя</NavLink>
+        </div>
+        <div className={s.dialog}>
+          <NavLink to="/dialogs/6">Ваня</NavLink>
+        </div>
+        <div className={s.dialog}>
+          <NavLink to="/dialogs/7">Зоя</NavLink>
+        </div>
+        <div className={s.dialog}>
+          <NavLink to="/dialogs/8">Вита</NavLink>
+        </div>
       </div>
       <div className={s.masseges}>
         <div className={s.massege}>Красиво жить не запретишь!</div>
