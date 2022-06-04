@@ -1,0 +1,25 @@
+.profile {
+  background-image: linear-gradient(
+    to left,
+    rgb(202, 225, 53),
+    rgb(239, 72, 72)
+  );
+
+  /* background-color: aqua; */
+  padding: 0 0 0 30px;
+}
+.img {
+  background-image: linear-gradient(
+    to left,
+    rgb(202, 225, 53),
+    rgb(239, 72, 72)
+  );
+  display: flex;
+  margin: 0 auto;
+}
+
+img {
+  display: block;
+
+  /* width: 100%; */
+}

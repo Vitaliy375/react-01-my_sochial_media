@@ -1,18 +1,19 @@
 .footer {
-	grid-area: f;
-	background-color: rgb(212, 244, 212);
-	height: 80px;
-	padding: 10px;
-	display: flex;
-	justify-content: space-evenly;
-	align-items: center;
+  grid-area: f;
+  /* background-color: rgb(212, 244, 212); */
+  background-image: linear-gradient(#e2bee3 20%, #f5e944 90%, #00ffa2);
+  height: 80px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 .footer button {
-	width: 100px;
-	height: 30px;
-	background-color: rgb(199, 246, 29);
-	color: rgb(32, 131, 244);
-	border-color: aqua;
-	/* display: flex;
+  width: 100px;
+  height: 30px;
+  background-color: rgb(199, 246, 29);
+  color: rgb(32, 131, 244);
+  border-color: aqua;
+  /* display: flex;
 	align-items: center; */
 }

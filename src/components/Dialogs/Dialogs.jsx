@@ -1,46 +1,43 @@
-import React from "react"
-import { NavLink } from "react-router-dom"
-import s from "./Dialogs.module.css"
+import React from 'react'
+import { NavLink } from 'react-router-dom'
+import s from './Dialogs.module.css'
+
+const DialogItem = props => {
+  let path = '/dialogs/' + props.id //
+  return (
+    <div className={s.dialog + ' ' + s.active}>
+      <NavLink to={path}>{props.name}</NavLink>
+    </div> // компонента
+  )
+}
+
+const Massege = props => {
+  //let path =
+  return <div className={s.massege}>{props.text}</div>
+}
 
 const Dialogs = props => {
   return (
     <div className={s.dialogs}>
       <div className={s.DialogsItems}>
-        <div className={s.dialog + " " + s.active}>
-          <NavLink to="/dialogs/1">Саша</NavLink>
-        </div>
-        <div className={s.dialog}>
-          <NavLink to="/dialogs/2">Валя</NavLink>
-        </div>
-        <div className={s.dialog}>
-          <NavLink to="/dialogs/3">Таня</NavLink>
-        </div>
-        <div className={s.dialog}>
-          <NavLink to="/dialogs/4">Коля</NavLink>
-        </div>
-        <div className={s.dialog}>
-          <NavLink to="/dialogs/5">Женя</NavLink>
-        </div>
-        <div className={s.dialog}>
-          <NavLink to="/dialogs/6">Ваня</NavLink>
-        </div>
-        <div className={s.dialog}>
-          <NavLink to="/dialogs/7">Зоя</NavLink>
-        </div>
-        <div className={s.dialog}>
-          <NavLink to="/dialogs/8">Вита</NavLink>
-        </div>
+        <DialogItem name="Саша" id="1" />
+        <DialogItem name="Валя" id="2" />
+        <DialogItem name="Таня" id="3" />
+        <DialogItem name="Коля" id="4" />
+        <DialogItem name="Женя" id="5" />
+        <DialogItem name="Ваня" id="6" />
+        <DialogItem name="Зоя" id="7" />
+        <DialogItem name="Вита" id="8" />
       </div>
       <div className={s.masseges}>
-        <div className={s.massege}>Красиво жить не запретишь!</div>
-        <div className={s.massege}>Красиво </div>
-        <div className={s.massege}>Красиво жить </div>
-        <div className={s.massege}>Красиво жить не </div>
-        <div className={s.massege}>запретишь!</div>
-        <div className={s.massege}>не запретишь!</div>
-        <div className={s.massege}>жить не запретишь!</div>
-        <div className={s.massege}>Красиво жить не запретишь!</div>
-        <div className={s.massege}>жить Красиво не запретишь!</div>
+        <Massege text="Красиво жить не запретишь!" />
+        <Massege text="Красиво" />
+        <Massege text="Красиво жить" />
+        <Massege text="Красиво жить не" />
+        <Massege text="запретишь!" />
+        <Massege text="не запретишь!" />
+        <Massege text="жить не запретишь!" />
+        <Massege text="жить Красиво не запретишь!" />
       </div>
     </div>
   )
