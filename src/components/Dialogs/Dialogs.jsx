@@ -17,27 +17,35 @@ const Massege = props => {
 }
 
 const Dialogs = props => {
+  let dialogsData = [
+    { id: '1', name: 'Саша' },
+    { id: '2', name: 'Валя' },
+    { id: '3', name: 'Таня' },
+    { id: '4', name: 'Коля' },
+    { id: '5', name: 'Женя' },
+    { id: '6', name: 'Ваня' },
+    { id: '7', name: 'Зоя' },
+    { id: '8', name: 'Вита' },
+  ]
+
+  let massegesData = [
+    { text: 'Красиво жить не запретишь!' },
+    { text: 'Красиво не запретишь!' },
+    { text: 'Красиво жить запретишь!' },
+  ]
+
   return (
     <div className={s.dialogs}>
       <div className={s.DialogsItems}>
-        <DialogItem name="Саша" id="1" />
-        <DialogItem name="Валя" id="2" />
-        <DialogItem name="Таня" id="3" />
-        <DialogItem name="Коля" id="4" />
-        <DialogItem name="Женя" id="5" />
-        <DialogItem name="Ваня" id="6" />
-        <DialogItem name="Зоя" id="7" />
-        <DialogItem name="Вита" id="8" />
+        <DialogItem name={dialogsData[0].name} id={dialogsData[0].id} />
+        <DialogItem name={dialogsData[1].name} id={dialogsData[1].id} />
       </div>
       <div className={s.masseges}>
-        <Massege text="Красиво жить не запретишь!" />
-        <Massege text="Красиво" />
-        <Massege text="Красиво жить" />
-        <Massege text="Красиво жить не" />
-        <Massege text="запретишь!" />
-        <Massege text="не запретишь!" />
-        <Massege text="жить не запретишь!" />
-        <Massege text="жить Красиво не запретишь!" />
+        <Massege text={massegesData[0].text} />
+        <Massege text={massegesData[1].text} />
+        <Massege text={massegesData[2].text} />
+        <Massege text={massegesData[0].text} />
+        <Massege text={massegesData[2].text} />
       </div>
     </div>
   )
