@@ -17,7 +17,7 @@ const Massege = props => {
 }
 
 const Dialogs = props => {
-  let dialogsData = [
+  let dialogs = [
     { id: '1', name: 'Саша' },
     { id: '2', name: 'Валя' },
     { id: '3', name: 'Таня' },
@@ -28,25 +28,20 @@ const Dialogs = props => {
     { id: '8', name: 'Вита' },
   ]
 
-  let massegesData = [
+  let masseges = [
     { text: 'Красиво жить не запретишь!' },
     { text: 'Красиво не запретишь!' },
     { text: 'Красиво жить запретишь!' },
   ]
 
+  let dialogsElements = dialogs.map(d => <DialogItem name={d.name} id={d.id} />)
+
+  let massegesElements = masseges.map(m => <Massege text={m.text} />)
+
   return (
     <div className={s.dialogs}>
-      <div className={s.DialogsItems}>
-        <DialogItem name={dialogsData[0].name} id={dialogsData[0].id} />
-        <DialogItem name={dialogsData[1].name} id={dialogsData[1].id} />
-      </div>
-      <div className={s.masseges}>
-        <Massege text={massegesData[0].text} />
-        <Massege text={massegesData[1].text} />
-        <Massege text={massegesData[2].text} />
-        <Massege text={massegesData[0].text} />
-        <Massege text={massegesData[2].text} />
-      </div>
+      <div className={s.DialogsItems}>{dialogsElements}</div>
+      <div className={s.masseges}>{massegesElements}</div>
     </div>
   )
 }
